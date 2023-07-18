@@ -15,7 +15,7 @@ func CreateCRUDObjects(
 	db *gorm.DB,
 	crudProductRepository badorm.CRUDRepository[models.Product, badorm.UUID],
 ) ([]*models.Product, error) {
-	products, err := crudProductRepository.GetAll(db)
+	products, err := crudProductRepository.Query(db)
 	if err != nil {
 		return nil, err
 	}
@@ -101,7 +101,7 @@ func QueryCRUDObjects(
 	shutdowner fx.Shutdowner,
 ) {
 	log.Println("Products with int = 1 are:")
-	result, err := crudProductService.GetEntities(
+	result, err := crudProductService.Query(
 		conditions.ProductInt(badorm.Eq(1)),
 	)
 	if err != nil {

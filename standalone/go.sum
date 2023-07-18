@@ -11,8 +11,8 @@ github.com/benbjohnson/clock v1.3.0 h1:ip6w0uFQkncKQ979AypyG0ER7mqUSBdKLOgAle/AT
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/ditrit/badaas v0.0.0-20230710083121-d6a9f3844706 h1:sbSMX52a1GwjmD4UKt+WmDAr2xDa5dmW9ukrS2Kf8iQ=
-github.com/ditrit/badaas v0.0.0-20230710083121-d6a9f3844706/go.mod h1:2j0E5KjjBNAaSvH+2PuEgKdSYsqUi5V6aeeoxFzn1AY=
+github.com/ditrit/badaas v0.0.0-20230718162530-9ca0e8f7130f h1:iuZkgImh77iMzcDnBqsB9BTQ+nyqldj3Mk/U53F3grk=
+github.com/ditrit/badaas v0.0.0-20230718162530-9ca0e8f7130f/go.mod h1:2j0E5KjjBNAaSvH+2PuEgKdSYsqUi5V6aeeoxFzn1AY=
 github.com/dnaeon/go-vcr v1.1.0/go.mod h1:M7tiix8f0r6mKKJ3Yq/kqU1OYf3MnfmBWVbPx/yU9ko=
 github.com/dnaeon/go-vcr v1.2.0/go.mod h1:R4UdLID7HZT3taECzJs4YgbbH6PIGXB6W/sc5OLb6RQ=
 github.com/elliotchance/pie/v2 v2.6.0 h1:lAQxtrxijynVjXuU0btqg9oh4Izq6IQVtypJw/45gZ4=

@@ -12,9 +12,8 @@ import (
 
 func main() {
 	fx.New(
-		// DB modules
-		fx.Provide(NewGormDBConnection),
 		// activate BaDORM
+		fx.Provide(NewGormDBConnection),
 		fx.Provide(GetModels),
 		badorm.BaDORMModule,
 
