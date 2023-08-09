@@ -5,6 +5,7 @@ import (
 
 	"github.com/ditrit/badaas-orm-example/standalone/models"
 	"github.com/ditrit/badaas/orm"
+	"github.com/ditrit/badaas/orm/model"
 	"go.uber.org/zap"
 	"gorm.io/gorm"
 )
@@ -25,7 +26,7 @@ func main() {
 		panic(err)
 	}
 
-	crudProductService, crudProductRepository := orm.GetCRUD[models.Product, orm.UUID](gormDB)
+	crudProductService, crudProductRepository := orm.GetCRUD[models.Product, model.UUID](gormDB)
 
 	CreateCRUDObjects(gormDB, crudProductRepository)
 	QueryCRUDObjects(crudProductService)

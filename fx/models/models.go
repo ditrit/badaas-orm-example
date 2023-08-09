@@ -1,18 +1,16 @@
 package models
 
-import (
-	"github.com/ditrit/badaas/orm"
-)
+import "github.com/ditrit/badaas/orm/model"
 
 type Company struct {
-	orm.UUIDModel
+	model.UUIDModel
 
 	Name    string
 	Sellers []Seller
 }
 
 type Product struct {
-	orm.UUIDModel
+	model.UUIDModel
 
 	String string
 	Int    int
@@ -21,20 +19,20 @@ type Product struct {
 }
 
 type Seller struct {
-	orm.UUIDModel
+	model.UUIDModel
 
 	Name      string
-	CompanyID *orm.UUID
+	CompanyID *model.UUID
 }
 
 type Sale struct {
-	orm.UUIDModel
+	model.UUIDModel
 
 	// belongsTo Product
 	Product   *Product
-	ProductID orm.UUID
+	ProductID model.UUID
 
 	// belongsTo Seller
 	Seller   *Seller
-	SellerID orm.UUID
+	SellerID model.UUID
 }

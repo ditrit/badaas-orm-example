@@ -7,12 +7,13 @@ import (
 	"github.com/ditrit/badaas-orm-example/standalone/conditions"
 	"github.com/ditrit/badaas-orm-example/standalone/models"
 	"github.com/ditrit/badaas/orm"
+	"github.com/ditrit/badaas/orm/model"
 	"gorm.io/gorm"
 )
 
 func CreateCRUDObjects(
 	db *gorm.DB,
-	crudProductRepository orm.CRUDRepository[models.Product, orm.UUID],
+	crudProductRepository orm.CRUDRepository[models.Product, model.UUID],
 ) ([]*models.Product, error) {
 	products, err := crudProductRepository.Query(db)
 	if err != nil {
@@ -95,7 +96,7 @@ func CreateCRUDObjects(
 }
 
 func QueryCRUDObjects(
-	crudProductService orm.CRUDService[models.Product, orm.UUID],
+	crudProductService orm.CRUDService[models.Product, model.UUID],
 ) {
 	log.Println("Products with int = 1 are:")
 	result, err := crudProductService.Query(
