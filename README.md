@@ -37,10 +37,13 @@ go run .
 And you should see something like:
 
 ```bash
-2023/05/16 09:52:03 Setting up CRUD example
-2023/05/16 09:52:03 Finished creating CRUD example
-2023/05/16 09:52:03 Products with int = 1 are:
-&{UUIDModel:{ID:1483487f-c585-4455-8d5b-2a58be27acbc CreatedAt:2023-05-16 09:50:12.025843 +0200 CEST UpdatedAt:2023-05-16 09:50:12.025843 +0200 CEST DeletedAt:{Time:0001-01-01 00:00:00 +0000 UTC Valid:false}} String: Int:1 Float:0 Bool:false}
+standalone/example.go:110
+[1.733ms] [rows:1] SELECT products.* FROM "products" WHERE products.int = 1 AND "products"."deleted_at" IS NULL
+
+standalone/example.go:110
+[info] transaction_exec [3.045ms]
+Products with int = 1 are:
+&{UUIDModel:{ID:5d29456f-5edd-4312-9fdf-678c27f51f54 CreatedAt:2023-08-09 15:23:02.068809 +0200 CEST UpdatedAt:2023-08-09 15:23:02.068809 +0200 CEST DeletedAt:{Time:0001-01-01 00:00:00 +0000 UTC Valid:false}} String: Int:1 Float:0 Bool:false}
 ```
 
 ## Explore it
