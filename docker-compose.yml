@@ -1,3 +1,4 @@
+# DEVELOPMENT ONLY, DO NOT USE FOR PRODUCTION
 version: '3.5'
 
 services:
@@ -8,8 +9,6 @@ services:
       - "26257:26257"
       - "8080:8080" # Web based dashboard
     command: start-single-node --insecure
-    volumes:
-      - "${PWD}/.cockroach-data:/cockroach/cockroach-data"
     environment:
       - COCKROACH_USER=root
       - COCKROACH_DATABASE=badaas_db
