@@ -3,8 +3,8 @@ module github.com/ditrit/badaas-orm-example/standalone
 go 1.18
 
 require (
-	github.com/ditrit/badaas v0.0.0-20230809094953-1026d11ddf03
-	go.uber.org/zap v1.24.0
+	github.com/ditrit/badaas v0.0.0-20230823081715-32ab70c776be
+	gorm.io/driver/postgres v1.5.2
 	gorm.io/gorm v1.25.1
 )
 
@@ -20,9 +20,9 @@ require (
 	go.uber.org/dig v1.17.0 // indirect
 	go.uber.org/fx v1.19.3 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
+	go.uber.org/zap v1.24.0 // indirect
 	golang.org/x/crypto v0.9.0 // indirect
 	golang.org/x/exp v0.0.0-20230522175609-2e198f4a06a1 // indirect
 	golang.org/x/sys v0.8.0 // indirect
 	golang.org/x/text v0.9.0 // indirect
-	gorm.io/driver/postgres v1.5.2 // indirect
 )

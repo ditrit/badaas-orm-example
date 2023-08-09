@@ -1,8 +1,8 @@
 github.com/benbjohnson/clock v1.3.0 h1:ip6w0uFQkncKQ979AypyG0ER7mqUSBdKLOgAle/AT8A=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
-github.com/ditrit/badaas v0.0.0-20230809094953-1026d11ddf03 h1:93ZSBTaQcR53bUTILjr5MoBW6M3TlYY+IfLds4RIN9w=
-github.com/ditrit/badaas v0.0.0-20230809094953-1026d11ddf03/go.mod h1:9itpAzScUdC9D2jE9bbn6kh0OdY791aIL3EgG3guDyw=
+github.com/ditrit/badaas v0.0.0-20230823081715-32ab70c776be h1:RGHC6jNCLV6Da+saYOhJ2U9qb3nFGIq/HMfKY5svgig=
+github.com/ditrit/badaas v0.0.0-20230823081715-32ab70c776be/go.mod h1:9itpAzScUdC9D2jE9bbn6kh0OdY791aIL3EgG3guDyw=
 github.com/elliotchance/pie/v2 v2.7.0 h1:FqoIKg4uj0G/CrLGuMS9ejnFKa92lxE1dEgBD3pShXg=
 github.com/elliotchance/pie/v2 v2.7.0/go.mod h1:18t0dgGFH006g4eVdDtWfgFZPQEgl10IoEO8YWEq3Og=
 github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
@@ -48,5 +48,5 @@ gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod h1:K4uyk7z7BCEPqu6E+C
 gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
 gorm.io/driver/postgres v1.5.2 h1:ytTDxxEv+MplXOfFe3Lzm7SjG09fcdb3Z/c056DTBx0=
 gorm.io/driver/postgres v1.5.2/go.mod h1:fmpX0m2I1PKuR7mKZiEluwrP3hbs+ps7JIGMUBpCgl8=
-gorm.io/gorm v1.25.1 h1:nsSALe5Pr+cM3V1qwwQ7rOkw+6UeLrX5O4v3llhHa64=
-gorm.io/gorm v1.25.1/go.mod h1:L4uxeKpfBml98NYqVqwAdmV1a2nBtAec/cf3fpucW/k=
+gorm.io/gorm v1.25.2 h1:gs1o6Vsa+oVKG/a9ElL3XgyGfghFfkKA2SInQaCyMho=
+gorm.io/gorm v1.25.2/go.mod h1:L4uxeKpfBml98NYqVqwAdmV1a2nBtAec/cf3fpucW/k=

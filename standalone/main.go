@@ -1,17 +1,16 @@
 package main
 
 import (
-	"time"
-
 	"github.com/ditrit/badaas-orm-example/standalone/models"
 	"github.com/ditrit/badaas/orm"
+	"github.com/ditrit/badaas/orm/logger"
 	"github.com/ditrit/badaas/orm/model"
-	"go.uber.org/zap"
+	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
 
 func main() {
-	gormDB, err := NewGormDBConnection()
+	gormDB, err := NewDBConnection()
 	if err != nil {
 		panic(err)
 	}
@@ -32,15 +31,11 @@ func main() {
 	QueryCRUDObjects(crudProductService)
 }
 
-func NewGormDBConnection() (*gorm.DB, error) {
-	logger, err := zap.NewDevelopment()
-	if err != nil {
-		return nil, err
-	}
-
-	return orm.ConnectToDialector(
-		logger,
-		orm.CreateDialector("localhost", "root", "postgres", "disable", "badaas_db", 26257),
-		10, time.Duration(5)*time.Second,
+func NewDBConnection() (*gorm.DB, error) {
+	return orm.Open(
+		postgres.Open(orm.CreateDSN("localhost", "root", "postgres", "disable", "badaas_db", 26257)),
+		&gorm.Config{
+			Logger: logger.Default.ToLogMode(logger.Info),
+		},
 	)
 }
