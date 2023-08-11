@@ -3,7 +3,7 @@ module github.com/ditrit/badaas-orm-example/fx
 go 1.18
 
 require (
-	github.com/ditrit/badaas v0.0.0-20230823081715-32ab70c776be
+	github.com/ditrit/badaas v0.0.0-20230823083541-3ab76ab2371a
 	go.uber.org/fx v1.19.3
 	go.uber.org/zap v1.24.0
 	gorm.io/driver/postgres v1.5.2

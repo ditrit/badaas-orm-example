@@ -3,9 +3,9 @@ module github.com/ditrit/badaas-orm-example/standalone
 go 1.18
 
 require (
-	github.com/ditrit/badaas v0.0.0-20230823081715-32ab70c776be
+	github.com/ditrit/badaas v0.0.0-20230823083541-3ab76ab2371a
 	gorm.io/driver/postgres v1.5.2
-	gorm.io/gorm v1.25.1
+	gorm.io/gorm v1.25.2-0.20230530020048-26663ab9bf55
 )
 
 require (
