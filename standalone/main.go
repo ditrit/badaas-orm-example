@@ -33,7 +33,7 @@ func main() {
 
 func NewDBConnection() (*gorm.DB, error) {
 	return orm.Open(
-		postgres.Open(orm.CreateDSN("localhost", "root", "postgres", "disable", "badaas_db", 26257)),
+		postgres.Open(orm.CreatePostgreSQLDSN("localhost", "root", "postgres", "disable", "badaas_db", 26257)),
 		&gorm.Config{
 			Logger: logger.Default.ToLogMode(logger.Info),
 		},

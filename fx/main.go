@@ -43,7 +43,7 @@ func NewZapLogger() (*zap.Logger, error) {
 
 func NewDBConnection(zapLogger *zap.Logger) (*gorm.DB, error) {
 	return orm.Open(
-		postgres.Open(orm.CreateDSN("localhost", "root", "postgres", "disable", "badaas_db", 26257)),
+		postgres.Open(orm.CreatePostgreSQLDSN("localhost", "root", "postgres", "disable", "badaas_db", 26257)),
 		&gorm.Config{
 			Logger: gormzap.NewDefault(zapLogger).ToLogMode(logger.Info),
 		},
